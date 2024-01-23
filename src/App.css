@@ -1,0 +1,142 @@
+*{
+  margin:0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.container{
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right:15px ;
+  padding-left: 15px;
+  min-height: 100vh;
+}
+
+.notes-list{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+}
+
+.note.new{
+   background-color: #b4e4f0;
+}
+
+.note.new .title{
+   width: 20vw;
+   background-color: transparent;
+   border: none;
+   outline: none;
+   font-size: 16px;
+   margin-bottom:10px ;
+}
+
+.note.new .title::placeholder{
+  color: #383737;
+}
+
+.note.new textarea{
+  background-color: transparent;
+  border: none;
+  resize: none;
+  color: #080F13;
+  font-size: 14px;
+  font-weight: 400;
+  border-top: 2px solid rgb(47, 46, 46) ;
+
+}
+
+textarea:focus{
+  outline: none;
+}
+/* .note.new textarea */
+
+
+.note{
+  background-color: #fef68a;
+  border-radius: 10px;
+  padding: 1rem;
+  height: 170px;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+}
+
+.note h3{
+   margin-left: 2px;
+   font-family: 'Open Sans', sans-serif;
+}
+
+.note .text{
+   background-color: transparent;
+   resize: none;
+   border: none;
+   outline: none;
+}
+
+ .note-footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.delete-icon{
+  cursor: pointer;
+}
+
+.delete-icon:active{
+  transform: scale(.98);
+  
+}
+
+.save{
+    border: none;
+    border-radius: 15px;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.save:hover{
+  background-color: #383737;
+}
+
+
+ .save:active{
+  transform: scale(.98);
+}
+
+.search{
+  display: flex;
+  align-items: center;
+  background-color: rgb(233, 233, 233);
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 1.5em;
+}
+
+.search input{
+   border: none;
+   outline: none;
+   background-color: transparent;
+   width: 500px;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0px;
+}
+
+.dark-mode{
+  background-color: #000000;
+}
+
+.dark-mode h1{
+  color: white;
+}
+
